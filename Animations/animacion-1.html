@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Animaciones</title>
+
+	<style>
+		div {
+			border-radius: 50%;
+			border: 3px solid;
+			font-size: 2.5em;
+			line-height: 80px;
+			height: 80px;
+			width: 80px;
+			text-align: center;
+			position: absolute;
+			left: 50%;
+			top: 300px;
+			margin-left: -40px;
+		}
+
+		.moveme {
+			animation: floatme .5s 1s infinite ease-in alternate;
+		}
+
+		/*
+			Es lo mismo que:
+
+				.movimiento {
+				  animation-name: floatme;
+				  animation-duration: 2s;
+				  animation-delay: 1s;
+				  animation-iteration-count: infinite;
+				  animation-timing-function: ease-in;
+				  animation-direction: alternate;
+				}
+				
+			*/
+
+		@keyframes floatme {
+
+			from {
+				transform: translateY(0);
+
+			}
+
+			to {
+				transform: translateY(50px);
+			}
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="moveme">&#x2193;</div>
+
+</body>
+
+</html>

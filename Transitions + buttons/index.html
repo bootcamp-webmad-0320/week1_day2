@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS3 Transitions</title>
+    <style>
+        .button {
+            color: forestgreen;
+            text-decoration: none;
+            letter-spacing: 1px;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            border: 1px solid forestgreen;
+            font-weight: 100;
+            display: block;
+            width: 200px;
+            padding: 10px 0;
+            text-align: center;
+            margin: 40px 0;
+
+            /* 
+            transition-property: all;
+            transition-duration: 1s; 
+            */
+
+            transition: all .5s
+        }
+
+        .button:hover {
+            background: forestgreen;
+            color: white;
+        }
+
+        .button.solid {
+            background: forestgreen;
+            color: white;
+        }
+
+        .button.big {
+            font-size: 1.5em;
+            padding: 20px 0;
+            width: 220px;
+        }
+
+        .button.small {
+            font-size: .7em;
+            width: 160px;
+        }
+
+        /* centrar elementos en bloque: valor 'auto' en margen horizontal*/
+        .button.center {
+            margin: 40px auto
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+
+        <h1>CSS3 transtions</h1>
+
+        <a class="button" href="#">Conócenos</a>
+        <a class="button solid" href="#">Conócenos</a>
+        <a class="button small" href="#">Conócenos</a>
+        <a class="button big" href="#">Conócenos</a>
+        <a class="button big solid" href="#">Conócenos</a>
+        <a class="button center" href="#">Conócenos</a>
+
+    </main>
+</body>
+
+</html>

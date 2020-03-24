@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS3 Animations</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: sans-serif;
+            padding: 100px 20px;
+        }
+
+        h1 {
+            margin-bottom: 50px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background: black;
+            margin: 100px;
+
+            /* 
+            animation-name: square-to-rectangle;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+            animation-direction: alternate; 
+            animation-timing-function: ease;
+            */
+
+            animation: square-to-rectangle infinite 2s alternate;
+        }
+
+        @keyframes square-to-rectangle {
+
+            from {
+                width: 100px;
+            }
+
+            to {
+                width: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+
+        <h1>CSS3 animation</h1>
+
+        <div class="box"></div>
+
+
+    </main>
+</body>
+
+</html>

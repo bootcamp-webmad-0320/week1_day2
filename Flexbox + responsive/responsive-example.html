@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FlexBox example</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero {
+            background: rgba(0, 0, 0, .1);
+            margin-bottom: 100px;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        h1 {
+            font-size: 7em
+        }
+
+        .flex-container {
+            display: flex;
+        }
+
+        .space-evenly {
+            justify-content: space-evenly;
+        }
+
+        .flex-center {
+            justify-content: center;
+        }
+
+        .align-items-center {
+            align-items: center;
+        }
+
+        .intro {
+            flex-wrap: wrap;
+        }
+
+        .intro article {
+            width: 20%
+        }
+
+        .info {
+            margin-top: 100px;
+        }
+
+        .info figure {
+            width: 40%
+        }
+
+        .info article {
+            width: 30%;
+        }
+
+        .info img {
+            width: 100%;
+        }
+
+        @media (max-width: 800px) {
+
+            h1 {
+                font-size: 5em;
+            }
+
+            .intro article {
+                width: 40%;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            h1 {
+                font-size: 3em;
+            }
+
+            .intro article {
+                width: 90%
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <header class="hero">
+            <h1>Ejemplo flexbox</h1>
+        </header>
+        <div class="intro flex-container space-evenly">
+            <article>
+                <h2>Columna 1</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptate totam illum in
+                    consequatur, excepturi possimus ratione aperiam reprehenderit mollitia? Cumque vero sed esse nostrum
+                    nulla omnis aliquam adipisci. Non.</p>
+            </article>
+            <article>
+                <h2>Columna 1</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptate totam illum in
+                    consequatur, excepturi possimus ratione aperiam reprehenderit mollitia? Cumque vero sed esse nostrum
+                    nulla omnis aliquam adipisci. Non.</p>
+            </article>
+            <article>
+                <h2>Coluimna 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, autem expedita. Asperiores unde
+                    quibusdam sit maiores inventore officiis quas, porro, esse sequi quod magnam veritatis accusantium.
+                    Aliquam excepturi repellendus iste?</p>
+            </article>
+            <article>
+                <h2>Coluimna 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, autem expedita. Asperiores unde
+                    quibusdam sit maiores inventore officiis quas, porro, esse sequi quod magnam veritatis accusantium.
+                    Aliquam excepturi repellendus iste?</p>
+            </article>
+        </div>
+
+
+        <div class="info flex-container flex-center align-items-center">
+            <figure>
+                <img src="https://cosasdigitales.com/wp-content/uploads/2018/11/cosas-digitales-tipos-animaciones-funcionales-web-360x240.jpg"
+                    alt="whatever">
+            </figure>
+            <article>
+                <h2>Texto explicativo</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, temporibus architecto? Exercitationem
+                    quaerat esse deleniti explicabo qui est omnis unde commodi, obcaecati voluptas ipsa vero. Doloremque
+                    architecto in deserunt consectetur!</p>
+            </article>
+        </div>
+    </main>
+</body>
+
+</html>
